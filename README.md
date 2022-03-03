@@ -153,7 +153,47 @@ while range(1,10001):
      if count==count1 :
          print(number,number1,"are bff")
  ```
+**A game of guessing a randomly chosen number between 1 and 100**
+```sql
+import random
+import time
 
+print("""*****************
+number guessing game
 
+Guess the number between 1 and 100.
+***************
 
+""")
 
+random_num= random.randint(1,100)
+guess_right=7
+
+while True:
+     guess= int(input("enter your guess:"))
+     if (guess<random_number):
+         print("querying information.")
+         time.sleep(1)
+
+         print("say a higher number")
+
+         guess_right-=1
+     elif (guess > random_number):
+         print("querying information....")
+         time.sleep(1)
+
+         print("say a smaller number")
+
+         guess_right -=1
+
+     else:
+         print("querying information...")
+         time.sleep(1)
+         print("congratulations",random_number)
+         break
+     if(guess_right==0):
+         print("Your guessed..")
+         print(random_number,"program terminating...")
+         break
+
+```
